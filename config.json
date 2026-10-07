@@ -1,0 +1,70 @@
+{
+  "siteName": "Budget Buys",
+  "tagline": "Tell us your budget. We'll tell you what to buy.",
+  "baseUrl": "https://budgetbuys.pages.dev",
+  "amazonTag": "",
+  "contactEmail": "",
+  "saleBanner": "Festival sale is live · Our picks are re-checked during the Great Indian Festival and Big Billion Days",
+  "categories": [
+    {
+      "slug": "phones",
+      "name": "Phones",
+      "icon": "M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM11 18h2",
+      "ranges": [
+        { "label": "Under ₹10k", "slug": "under-10k", "title": "under ₹10,000" },
+        { "label": "₹10–15k", "slug": "10-15k", "title": "₹10,000 to ₹15,000" },
+        { "label": "₹15–20k", "slug": "15-20k", "title": "₹15,000 to ₹20,000" },
+        { "label": "₹20–30k", "slug": "20-30k", "title": "₹20,000 to ₹30,000" },
+        { "label": "₹30–50k", "slug": "30-50k", "title": "₹30,000 to ₹50,000" },
+        { "label": "Above ₹50k", "slug": "above-50k", "title": "above ₹50,000" }
+      ],
+      "usage": {
+        "gaming": "Gaming",
+        "camera": "Camera",
+        "battery": "Battery",
+        "everyday": "Everyday & parents",
+        "clean-software": "Clean software & long updates"
+      },
+      "guide": [
+        "Start with the processor and the screen, not the camera megapixels. A Snapdragon 6-series, 7-series or Dimensity 7000-series chip will stay smooth for years; Unisoc and Helio chips are fine for calls, WhatsApp and YouTube but slow down with heavy apps. An AMOLED screen is the single biggest upgrade you will notice every day.",
+        "Phone prices in India went up sharply in 2026 because memory chips got more expensive, so last year's models are often the better deal. That is why many of our picks are 2025 phones still in stock at lower prices, while some newer models are listed above their old price brackets.",
+        "Check how many years of software updates the brand promises, and whether there is a service centre near you. Samsung, Motorola, OnePlus and Google are the safest for long-term support. Ignore claims like 'up to 16GB RAM' — that counts storage used as virtual RAM, not real memory."
+      ]
+    },
+    {
+      "slug": "laptops", "name": "Laptops", "comingSoon": true,
+      "icon": "M4 5h16v10H4zM2 19h20",
+      "ranges": []
+    },
+    {
+      "slug": "tablets", "name": "Tablets", "comingSoon": true,
+      "icon": "M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM11 17h2",
+      "ranges": []
+    },
+    {
+      "slug": "tvs", "name": "TVs", "comingSoon": true,
+      "icon": "M3 5h18v12H3zM8 21h8M12 17v4",
+      "ranges": []
+    },
+    {
+      "slug": "earbuds", "name": "Earbuds", "comingSoon": true,
+      "icon": "M8 4a4 4 0 0 1 4 4v3a2 2 0 0 1-2 2H9v7M16 4a4 4 0 0 0-4 4",
+      "ranges": []
+    },
+    {
+      "slug": "headphones", "name": "Headphones", "comingSoon": true,
+      "icon": "M3 15v-3a9 9 0 0 1 18 0v3M3 15a2 2 0 0 1 2-2h1v7H5a2 2 0 0 1-2-2zM21 15a2 2 0 0 0-2-2h-1v7h1a2 2 0 0 0 2-2z",
+      "ranges": []
+    },
+    {
+      "slug": "smartwatches", "name": "Smartwatches", "comingSoon": true,
+      "icon": "M8 7h8v10H8zM9 3h6l1 4H8zM9 21h6l1-4H8z",
+      "ranges": []
+    },
+    {
+      "slug": "monitors", "name": "Monitors", "comingSoon": true,
+      "icon": "M3 4h18v12H3zM8 20h8M12 16v4",
+      "ranges": []
+    }
+  ]
+}

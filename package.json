@@ -1,0 +1,12 @@
+{
+  "name": "budget-buys",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Budget Buys — static affiliate site generated from data/products.csv",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs --preview"
+  },
+  "engines": { "node": ">=18" }
+}
