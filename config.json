@@ -32,9 +32,28 @@
       ]
     },
     {
-      "slug": "laptops", "name": "Laptops", "comingSoon": true,
+      "slug": "laptops",
+      "name": "Laptops",
       "icon": "M4 5h16v10H4zM2 19h20",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹35k", "slug": "under-35k", "title": "under ₹35,000" },
+        { "label": "₹35–50k", "slug": "35-50k", "title": "₹35,000 to ₹50,000" },
+        { "label": "₹50–70k", "slug": "50-70k", "title": "₹50,000 to ₹70,000" },
+        { "label": "₹70k–1L", "slug": "70k-1l", "title": "₹70,000 to ₹1,00,000" },
+        { "label": "Above ₹1L", "slug": "above-1l", "title": "above ₹1,00,000" }
+      ],
+      "usage": {
+        "student": "Students & college",
+        "coding-office": "Coding & office work",
+        "gaming": "Gaming",
+        "editing-design": "Editing & design",
+        "thin-light": "Thin & light"
+      },
+      "guide": [
+        "Look at the processor and RAM first. For college and office work, a 13th-gen Core i3, Core 3, Ryzen 3 7000 or Ryzen 5 is enough; for coding, editing or many browser tabs, get 16GB RAM and an H-series chip (like the Core i5-13420H or Core 5 210H). Always pick an SSD, and check whether the RAM can be upgraded later, because many thin laptops have it soldered.",
+        "Laptop prices in India jumped in 2026 because memory chips got more expensive, so a Core i3 laptop that used to cost around ₹35,000 now sells for ₹45,000 or more. Under ₹35k the honest choices are Chromebooks, Android-based laptops or older Windows chips. If you need Windows for Office, coding or exams, stretching to about ₹45,000 gets you a laptop that will last.",
+        "Read the warranty line before you buy: onsite warranty means a technician comes to you, carry-in means you visit a service centre. Dell, HP, Lenovo, ASUS and Acer have the widest service networks. For gaming, the graphics card matters more than the processor: an RTX 2050 is entry level, an RTX 3050 handles most games at medium settings, and RTX 50-series cards run new games at high settings."
+      ]
     },
     {
       "slug": "tablets", "name": "Tablets", "comingSoon": true,
