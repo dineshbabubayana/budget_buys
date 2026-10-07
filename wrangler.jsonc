@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers static-assets config: serve the built site from dist/
+  "name": "budget-buys",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
