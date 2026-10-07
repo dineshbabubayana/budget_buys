@@ -215,9 +215,50 @@
       ]
     },
     {
-      "slug": "smartwatches", "name": "Smartwatches", "comingSoon": true,
+      "slug": "smartwatches",
+      "name": "Smartwatches",
       "icon": "M8 7h8v10H8zM9 3h6l1 4H8zM9 21h6l1-4H8z",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹2k", "slug": "under-2k", "title": "under ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" },
+        { "label": "₹5–15k", "slug": "5-15k", "title": "₹5,000 to ₹15,000" },
+        { "label": "Above ₹15k", "slug": "above-15k", "title": "above ₹15,000" }
+      ],
+      "usage": {
+        "calling": "Bluetooth calling",
+        "fitness": "Fitness & health",
+        "style": "Looks & style",
+        "android": "Android phone users",
+        "iphone": "Works with iPhone"
+      },
+      "guide": [
+        "Decide what you want the watch for. Under ₹5,000, smartwatches are mainly for notifications, calls and step counting; their heart-rate and SpO2 numbers are rough estimates. For accurate fitness tracking, GPS for runs or real apps like Google Maps and Wallet, spend ₹8,000 or more on Amazfit, OnePlus, Samsung, Apple or Garmin.",
+        "Budget smartwatches fail more often than any other gadget we track. In our check, many popular Fire-Boltt, Noise and boAt models had 15–22% of buyers rating them 1–2★, mostly for battery drain, dead screens and charging problems. We only kept models at about 12% or lower, and preferred brands with service centres like Samsung, Redmi, Fastrack and boAt.",
+        "Match the watch to your phone. Apple Watch works only with iPhone, and Wear OS watches like the OnePlus Watch 2R and Galaxy Watch8 work only with Android. Amazfit, Garmin, Redmi and most budget watches work with both. Look for an AMOLED screen, which is much brighter outdoors than LCD, and check the real battery life in reviews rather than the box claim."
+      ]
+    },
+    {
+      "slug": "watches",
+      "name": "Watches",
+      "icon": "M12 7v5l3 2M9 2h6l1 4H8zM9 22h6l1-4H8zM12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12z",
+      "ranges": [
+        { "label": "Under ₹2k", "slug": "under-2k", "title": "under ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" },
+        { "label": "Above ₹10k", "slug": "above-10k", "title": "above ₹10,000" }
+      ],
+      "usage": {
+        "formal": "Office & formal",
+        "casual": "Everyday casual",
+        "sports": "Sports & tough",
+        "women": "For women",
+        "automatic": "Automatic / mechanical"
+      },
+      "guide": [
+        "Pick the style first. A steel-strap analog watch with a plain dial suits office and occasions; resin or silicone straps are better for sports, college and daily wear; digital watches like the Casio Vintage and G-Shock are the most practical. Titan, Casio, Fastrack, Sonata and Timex have service centres and battery replacement across India.",
+        "Check water resistance on the case back. '30m' or 'water resistant' only survives rain and hand washing; you need 100m or more to swim. Steel bracelets usually need a few links removed at a watch shop, which costs little. Leather straps look smart but wear out within a year or two if they get wet often.",
+        "Above ₹10,000, consider an automatic (self-winding) watch like the Seiko 5, which runs on your wrist movement and never needs a battery, or a solar Citizen Eco-Drive. Buy watches over ₹5,000 only from the brand's own store page or 'sold by' the brand on Amazon and Flipkart, because fake Fossil, Seiko and Tissot watches are common from third-party sellers."
+      ]
     },
     {
       "slug": "monitors",
