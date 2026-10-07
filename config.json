@@ -170,6 +170,72 @@
       ]
     },
     {
+      "slug": "soundbars",
+      "name": "Soundbars",
+      "icon": "M2 10h20v5H2zM6 12.5h.01M18 12.5h.01M10 12.5h4",
+      "ranges": [
+        { "label": "Under ₹5k", "slug": "under-5k", "title": "under ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" },
+        { "label": "₹10–25k", "slug": "10-25k", "title": "₹10,000 to ₹25,000" },
+        { "label": "Above ₹25k", "slug": "above-25k", "title": "above ₹25,000" }
+      ],
+      "usage": {
+        "tv": "TV & movies",
+        "clear-voice": "Clear dialogue",
+        "bass": "Deep bass",
+        "surround": "Surround (5.1 / Atmos)"
+      },
+      "guide": [
+        "Decide what is wrong with your TV's sound. If you cannot hear voices clearly, a 2.0 or 3.1 soundbar with a centre channel fixes it; if you want cinema bass, get a 2.1 bar with a subwoofer; for real surround sound, you need 5.1 with rear speakers. Ignore huge wattage numbers on cheap bars: a 100W Sony often sounds better than a '500W' budget bar.",
+        "Connect with HDMI ARC (or eARC) if your TV has it, so the TV remote controls the soundbar volume. Optical is the next best; Bluetooth adds a slight delay and lower quality. Check that the soundbar width suits your TV: a long bar under a 32-inch TV looks odd, and a tiny bar under a 65-inch TV sounds thin.",
+        "Under ₹5,000, most soundbars we checked had 15–25% of buyers rating them 1–2★, so we kept only a few. Between ₹5,000 and ₹10,000, boAt, Zebronics and Mivi give big sound for the money, and Sony gives the cleanest. Above ₹15,000, Sony dominates on reliability, with very few complaints in buyer reviews."
+      ]
+    },
+    {
+      "slug": "bluetooth-speakers",
+      "name": "Bluetooth Speakers",
+      "icon": "M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM12 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM12 6h.01",
+      "ranges": [
+        { "label": "Under ₹2k", "slug": "under-2k", "title": "under ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" },
+        { "label": "Above ₹10k", "slug": "above-10k", "title": "above ₹10,000" }
+      ],
+      "usage": {
+        "outdoor": "Outdoor & travel",
+        "party": "Parties",
+        "home": "Home & desk"
+      },
+      "guide": [
+        "Think about where you will use it. For travel, the bathroom or the beach, get an IP67 speaker like the JBL Go 3 that survives water and dust. For parties, size matters: bigger speakers with more watts and bigger drivers fill a room. For a desk or bedroom, a small speaker with good battery life is enough.",
+        "Battery claims are measured at low volume, so expect about half at party levels. TWS or 'party' pairing lets you join two speakers for stereo, and only works with the same brand. JBL, Sony, boAt, Marshall and Bose have the best service in India; imported brands like Tribit sound great but are harder to get repaired.",
+        "Under ₹2,000, boAt and Portronics are the most reliable; avoid unbranded 'tower' and 'party' speakers, which had 20–40% of buyers rating them 1–2★. Above ₹10,000, the Bose SoundLink Flex had the lowest complaint rate of any speaker we checked."
+      ]
+    },
+    {
+      "slug": "refrigerators",
+      "name": "Refrigerators",
+      "icon": "M6 2h12a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zM5 10h14M8 5v3M8 13v4",
+      "ranges": [
+        { "label": "Under ₹20k", "slug": "under-20k", "title": "under ₹20,000" },
+        { "label": "₹20–30k", "slug": "20-30k", "title": "₹20,000 to ₹30,000" },
+        { "label": "₹30–50k", "slug": "30-50k", "title": "₹30,000 to ₹50,000" },
+        { "label": "Above ₹50k", "slug": "above-50k", "title": "above ₹50,000" }
+      ],
+      "usage": {
+        "bachelor": "Bachelor / hostel",
+        "small-family": "Couple / small family",
+        "family": "Family of 3–4",
+        "big-family": "Big family (5+)",
+        "convertible": "Convertible freezer"
+      },
+      "guide": [
+        "Size the fridge by family: 80–100 L for a bachelor or hostel, 180–200 L for a couple, 230–260 L for a family of 3–4, and 300 L or more for bigger families. Single-door (direct cool) fridges are cheapest and use less power but need manual defrosting; double-door (frost free) fridges defrost themselves and keep vegetables fresher.",
+        "Choose an inverter compressor and the highest star rating you can afford, because a fridge runs 24 hours a day and power savings add up over 10 years. Convertible models let you turn the freezer into extra fridge space for festivals or parties. Samsung, LG and Whirlpool have the widest service networks in India.",
+        "Most bad fridge reviews on Amazon and Flipkart are about dents on delivery, late installation or stabilisers, not the fridge itself. Check the fridge carefully before the delivery person leaves, and use a stabiliser if your area has voltage swings. We dropped models where 1–2★ complaints were about the compressor or cooling failing."
+      ]
+    },
+    {
       "slug": "washing-machines",
       "name": "Washing Machines",
       "icon": "M5 2h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zM4 7h16M12 10a4 4 0 1 0 0 8 4 4 0 0 0 0-8z",
@@ -212,6 +278,26 @@
         "Size the AC by room: 1 ton for up to about 110 sq ft, 1.5 ton for 110–180 sq ft, and 2 ton above that or for top-floor rooms that get direct sun. Buy an inverter split AC; it cools faster, holds the temperature steadily and uses much less power than a fixed-speed model. Copper condenser coils are easier to repair than aluminium ones.",
         "Star rating is about your power bill. If you run the AC 8 hours or more a day for most of the year, a 5-star model pays back its higher price within a few summers; for a few hours on hot nights, a 3-star is the better value. In our check, several premium 5-star models had more 1★ reviews than good 3-star ones, so a higher star rating does not mean a more reliable AC.",
         "Most 1–3★ AC reviews are about installation: delays, extra charges for pipes and stands, and gas leaks from poor fitting. Confirm free installation, ask for the extra-pipe rate before the technician starts, and register the warranty yourself. Daikin, Voltas, Carrier, Panasonic and Midea had the best service feedback; we dropped models where complaints were about the unit failing, not the installation."
+      ]
+    },
+    {
+      "slug": "water-purifiers",
+      "name": "Water Purifiers",
+      "icon": "M12 2s6 7 6 12a6 6 0 0 1-12 0c0-5 6-12 6-12z",
+      "ranges": [
+        { "label": "Under ₹10k", "slug": "under-10k", "title": "under ₹10,000" },
+        { "label": "₹10–15k", "slug": "10-15k", "title": "₹10,000 to ₹15,000" },
+        { "label": "Above ₹15k", "slug": "above-15k", "title": "above ₹15,000" }
+      ],
+      "usage": {
+        "borewell": "Borewell / high TDS water",
+        "tanker": "Tanker water",
+        "low-maintenance": "Low maintenance"
+      },
+      "guide": [
+        "Check your water before you buy. If it comes from a borewell or tanker, or tastes salty, you need RO (reverse osmosis), which removes dissolved salts. If you get municipal water with low TDS (under 200), a UV + UF purifier is enough and wastes no water. A cheap TDS meter costs about ₹200 and tells you which you need.",
+        "The purifier price is only half the cost: filters need replacing every 12–18 months and cost ₹1,500–4,000 a year. Aquaguard, KENT, Pureit and Livpure have the widest service networks; Native by Urban Company and Atomberg use 2-year filters and need fewer service visits.",
+        "Avoid unbranded RO purifiers under ₹5,000, even with thousands of ratings. In our check they had 15–21% of buyers rating them 1–2★, with leaks, bad taste and no-show technicians. Most complaints even for good brands are about installation delays, so book installation as soon as the purifier arrives."
       ]
     },
     {
@@ -258,6 +344,49 @@
         "Pick the style first. A steel-strap analog watch with a plain dial suits office and occasions; resin or silicone straps are better for sports, college and daily wear; digital watches like the Casio Vintage and G-Shock are the most practical. Titan, Casio, Fastrack, Sonata and Timex have service centres and battery replacement across India.",
         "Check water resistance on the case back. '30m' or 'water resistant' only survives rain and hand washing; you need 100m or more to swim. Steel bracelets usually need a few links removed at a watch shop, which costs little. Leather straps look smart but wear out within a year or two if they get wet often.",
         "Above ₹10,000, consider an automatic (self-winding) watch like the Seiko 5, which runs on your wrist movement and never needs a battery, or a solar Citizen Eco-Drive. Buy watches over ₹5,000 only from the brand's own store page or 'sold by' the brand on Amazon and Flipkart, because fake Fossil, Seiko and Tissot watches are common from third-party sellers."
+      ]
+    },
+    {
+      "slug": "power-banks",
+      "name": "Power Banks",
+      "icon": "M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM13 7l-3 5h4l-3 5",
+      "ranges": [
+        { "label": "Under ₹1,000", "slug": "under-1000", "title": "under ₹1,000" },
+        { "label": "₹1–2k", "slug": "1-2k", "title": "₹1,000 to ₹2,000" },
+        { "label": "Above ₹2k", "slug": "above-2k", "title": "above ₹2,000" }
+      ],
+      "usage": {
+        "phone": "Phone charging",
+        "pocket": "Pocket size",
+        "travel": "Travel & long trips",
+        "laptop": "Laptop charging",
+        "iphone": "iPhone (MagSafe)"
+      },
+      "guide": [
+        "Pick the capacity by use: 10,000 mAh charges a phone about twice and fits a pocket; 20,000 mAh charges 3–4 times and suits travel. Real usable capacity is about 60–65% of the number on the box, because some energy is lost as heat. Look for 22.5W or higher output with a USB-C PD port for fast charging.",
+        "Avoid power banks claiming huge capacities like 50,000 or 2,00,000 mAh for under ₹1,000. They are fake, and in our check such listings had over 20% of buyers rating them 1–2★. Xiaomi, Ambrane, Portronics, Spigen and Duracell had the most honest capacities and fewest complaints.",
+        "To charge a laptop, you need 45W or more from a USB-C PD port, and 65W for most bigger laptops. iPhone 12 and newer users can get a magnetic MagSafe bank for cable-free charging. Airlines allow power banks up to about 27,000 mAh (100Wh) in cabin baggage only, never in checked bags."
+      ]
+    },
+    {
+      "slug": "trimmers",
+      "name": "Trimmers",
+      "icon": "M8 2h8v6l-2 2v12h-4V10L8 8zM8 5h8",
+      "ranges": [
+        { "label": "Under ₹1,000", "slug": "under-1000", "title": "under ₹1,000" },
+        { "label": "₹1–2k", "slug": "1-2k", "title": "₹1,000 to ₹2,000" },
+        { "label": "Above ₹2k", "slug": "above-2k", "title": "above ₹2,000" }
+      ],
+      "usage": {
+        "beard": "Beard",
+        "hair": "Hair & head",
+        "body": "Full body grooming",
+        "shave": "Clean shave look"
+      },
+      "guide": [
+        "Decide what you want to trim. A beard trimmer with length settings is enough for most men; a multigroom kit adds attachments for hair, nose and body; Philips OneBlade trims, edges and shaves close without razor cuts, which suits stubble and clean-shaven looks. Waterproof trimmers can be rinsed and used in the shower.",
+        "Runtime matters if you trim often: 45–60 minutes is fine for weekly beard trims, while VGR and Havells models run up to 2–3 hours. Type-C charging means you can use your phone charger. Philips had the lowest complaint rates and the widest service network in our check.",
+        "Very cheap trimmers under ₹500 often pull hair and their batteries die within months; in our check some had over 20% of buyers rating them 1–2★. Spending ₹600–1,200 on Philips, Xiaomi, VGR, Havells or Bombay Shaving Company gets you a trimmer that lasts years."
       ]
     },
     {
