@@ -199,7 +199,7 @@ ${bestPrice(p) ? `<div class="price">${rupee(bestPrice(p))} <small>best price we
 <form class="finder" id="finder" onsubmit="return false" aria-label="Find your pick">
 <h2>Find your pick</h2>
 <fieldset class="step"><legend><span class="step-n">1</span>I want to buy</legend><div class="cat-tiles" id="f-cats">${tiles}</div></fieldset>
-<fieldset class="step"><legend><span class="step-n">2</span>My budget is</legend><div class="chips" id="f-ranges"></div></fieldset>
+<fieldset class="step"><legend><span class="step-n">2</span>My budget is <span class="hint">pick one or more</span></legend><div class="chips" id="f-ranges"></div></fieldset>
 <fieldset class="step" id="f-use-step"><legend><span class="step-n">3</span>What matters most?</legend><div class="chips" id="f-use"></div></fieldset>
 <a class="chip on" href="#results" style="justify-content:center;border-radius:12px;font-size:17px;padding:14px">See my picks ↓</a>
 </form>

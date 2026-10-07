@@ -10,7 +10,7 @@
     var live = data.categories.filter(function (c) { return !c.comingSoon; });
     var state = {
       cat: params.get('cat') || (live[0] && live[0].slug),
-      range: params.get('range') || '',
+      ranges: (params.get('range') || '').split(',').filter(Boolean),
       use: params.get('use') || 'all'
     };
 
@@ -45,15 +45,25 @@
       catBox.querySelectorAll('.tile').forEach(function (t) {
         t.setAttribute('aria-pressed', t.dataset.cat === c.slug ? 'true' : 'false');
       });
-      if (!c.ranges.some(function (r) { return r.slug === state.range; })) {
-        var counts = c.ranges.map(function (r) { return countFor(c.slug, r.slug); });
-        var firstWith = c.ranges.find(function (r, i) { return counts[i] > 0; });
-        state.range = (c.ranges.find(function (r) { return r.slug === c.defaultRange; }) || firstWith || c.ranges[0]).slug;
+      // keep only valid ranges with picks, in the category's own order
+      state.ranges = c.ranges.filter(function (r) {
+        return state.ranges.indexOf(r.slug) >= 0 && countFor(c.slug, r.slug) > 0;
+      }).map(function (r) { return r.slug; });
+      if (!state.ranges.length) {
+        var firstWith = c.ranges.find(function (r) { return countFor(c.slug, r.slug) > 0; });
+        state.ranges = [(c.ranges.find(function (r) { return r.slug === c.defaultRange; }) || firstWith || c.ranges[0]).slug];
       }
       rangeBox.textContent = '';
       c.ranges.forEach(function (r) {
         var n = countFor(c.slug, r.slug);
-        var b = chip(r.label, r.slug === state.range, function () { state.range = r.slug; update(); });
+        var on = state.ranges.indexOf(r.slug) >= 0;
+        var b = chip(r.label, on, function () {
+          if (on && state.ranges.length === 1) return; // always keep one budget selected
+          state.ranges = on
+            ? state.ranges.filter(function (x) { return x !== r.slug; })
+            : state.ranges.concat(r.slug);
+          update();
+        });
         if (!n) b.disabled = true;
         rangeBox.appendChild(b);
       });
@@ -73,43 +83,74 @@
       return data.products.filter(function (p) { return p.cat === cat && p.range === range; }).length;
     }
 
+    // "₹10,000 to ₹15,000" + "₹15,000 to ₹20,000" → "₹10,000 to ₹20,000"; gaps → "₹10–15k + ₹20–30k"
+    function budgetTitle(c, sel) {
+      if (sel.length === 1) return sel[0].title;
+      var idx = sel.map(function (r) { return c.ranges.indexOf(r); });
+      var joined = idx.every(function (v, i) { return i === 0 || v === idx[i - 1] + 1; });
+      if (!joined) return sel.map(function (r) { return r.label; }).join(' + ');
+      var a = sel[0].title, z = sel[sel.length - 1].title;
+      var lo = /^under /.test(a) ? null : a.replace(/^above /, '').split(' to ')[0];
+      var hi = /^above /.test(z) ? null : z.replace(/^under /, '').split(' to ').pop();
+      if (lo && hi) return lo + ' to ' + hi;
+      if (hi) return 'under ' + hi;
+      if (lo) return 'above ' + lo;
+      return 'at every budget';
+    }
+
     function renderResults() {
       var c = cur();
-      var r = c.ranges.find(function (x) { return x.slug === state.range; });
-      var all = data.products.filter(function (p) { return p.cat === c.slug && p.range === state.range; })
-        .sort(function (a, b) { return a.p - b.p; });
-      var shown = state.use === 'all' ? all : all.filter(function (p) { return p.usage.indexOf(state.use) >= 0; });
-      heading.textContent = (state.use === 'all' ? 'Best ' : 'Best for ' + c.usage[state.use].toLowerCase() + ': ') +
-        c.name.toLowerCase() + ' ' + (r ? r.title : '');
-      list.textContent = '';
-      if (!shown.length) {
-        var e = el('li', 'empty', all.length
-          ? 'None of our picks in this budget are tagged for this use. Try "Anything" or the next budget up.'
-          : 'We are still researching this budget. Check back soon.');
-        list.appendChild(e);
-      }
-      shown.forEach(function (p, i) {
-        var li = el('li', 'rcard' + (i === 0 ? ' first' : ''));
-        li.appendChild(el('span', 'rank', String(i + 1)));
-        var body = el('div', 'rbody');
-        body.appendChild(el('span', 'role', p.role));
-        var name = el('div', 'rname', p.brand + ' ' + p.model + ' ');
-        name.appendChild(el('span', null, p.variant));
-        body.appendChild(name);
-        body.appendChild(el('div', 'rwhy', p.why));
-        if (p.badge) body.appendChild(el('span', 'badge', p.badge));
-        li.appendChild(body);
-        var buy = el('div', 'buy');
-        buy.appendChild(storeBtn('Amazon', p.amz, p.ap, 'btn-amz'));
-        buy.appendChild(storeBtn('Flipkart', p.fk, p.fp, 'btn-fk'));
-        li.appendChild(buy);
-        list.appendChild(li);
-      });
+      var sel = c.ranges.filter(function (x) { return state.ranges.indexOf(x.slug) >= 0; });
+      var multi = sel.length > 1;
       var baseEl = document.querySelector('[data-base]');
       var base = baseEl ? baseEl.dataset.base : '/';
       var idx = baseEl ? (baseEl.dataset.index || '') : '';
-      more.href = base + c.slug + '/' + state.range + '/' + idx + (state.use !== 'all' ? '#use-' + state.use : '');
-      more.hidden = !all.length;
+      var hash = state.use !== 'all' ? '#use-' + state.use : '';
+      heading.textContent = (state.use === 'all' ? 'Best ' : 'Best for ' + c.usage[state.use].toLowerCase() + ': ') +
+        c.name.toLowerCase() + ' ' + budgetTitle(c, sel);
+      list.textContent = '';
+      var total = 0, totalAll = 0;
+      sel.forEach(function (r) {
+        var all = data.products.filter(function (p) { return p.cat === c.slug && p.range === r.slug; })
+          .sort(function (a, b) { return a.p - b.p; });
+        var shown = state.use === 'all' ? all : all.filter(function (p) { return p.usage.indexOf(state.use) >= 0; });
+        totalAll += all.length; total += shown.length;
+        if (multi && shown.length) {
+          var g = el('li', 'rgroup');
+          g.appendChild(el('span', 'rgroup-name', r.label));
+          var gl = el('a', 'rgroup-link', 'Full guide →');
+          gl.href = base + c.slug + '/' + r.slug + '/' + idx + hash;
+          g.appendChild(gl);
+          list.appendChild(g);
+        }
+        shown.forEach(function (p, i) { list.appendChild(card(p, i)); });
+      });
+      if (!total) {
+        var e = el('li', 'empty', totalAll
+          ? 'None of our picks in ' + (multi ? 'these budgets' : 'this budget') + ' are tagged for this use. Try "Anything" or add the next budget up.'
+          : 'We are still researching this budget. Check back soon.');
+        list.appendChild(e);
+      }
+      more.href = base + c.slug + '/' + sel[0].slug + '/' + idx + hash;
+      more.hidden = multi || !totalAll;
+    }
+
+    function card(p, i) {
+      var li = el('li', 'rcard' + (i === 0 ? ' first' : ''));
+      li.appendChild(el('span', 'rank', String(i + 1)));
+      var body = el('div', 'rbody');
+      body.appendChild(el('span', 'role', p.role));
+      var name = el('div', 'rname', p.brand + ' ' + p.model + ' ');
+      name.appendChild(el('span', null, p.variant));
+      body.appendChild(name);
+      body.appendChild(el('div', 'rwhy', p.why));
+      if (p.badge) body.appendChild(el('span', 'badge', p.badge));
+      li.appendChild(body);
+      var buy = el('div', 'buy');
+      buy.appendChild(storeBtn('Amazon', p.amz, p.ap, 'btn-amz'));
+      buy.appendChild(storeBtn('Flipkart', p.fk, p.fp, 'btn-fk'));
+      li.appendChild(buy);
+      return li;
     }
 
     function storeBtn(store, url, price, cls) {
@@ -125,13 +166,13 @@
     function update() {
       renderControls();
       renderResults();
-      var q = new URLSearchParams({ cat: state.cat, range: state.range });
+      var q = new URLSearchParams({ cat: state.cat, range: state.ranges.join(',') });
       if (state.use !== 'all') q.set('use', state.use);
-      history.replaceState(null, '', '?' + q.toString() + location.hash);
+      history.replaceState(null, '', '?' + q.toString().replace(/%2C/g, ',') + location.hash);
     }
 
     catBox.querySelectorAll('.tile').forEach(function (t) {
-      t.addEventListener('click', function () { state.cat = t.dataset.cat; state.range = ''; state.use = 'all'; update(); });
+      t.addEventListener('click', function () { state.cat = t.dataset.cat; state.ranges = []; state.use = 'all'; update(); });
     });
     update();
   }
