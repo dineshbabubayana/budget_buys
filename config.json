@@ -66,14 +66,72 @@
       "ranges": []
     },
     {
-      "slug": "earbuds", "name": "Earbuds", "comingSoon": true,
+      "slug": "earbuds",
+      "name": "Earbuds",
       "icon": "M8 4a4 4 0 0 1 4 4v3a2 2 0 0 1-2 2H9v7M16 4a4 4 0 0 0-4 4",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹1,500", "slug": "under-1500", "title": "under ₹1,500" },
+        { "label": "₹1.5–3k", "slug": "1500-3k", "title": "₹1,500 to ₹3,000" },
+        { "label": "₹3–6k", "slug": "3-6k", "title": "₹3,000 to ₹6,000" },
+        { "label": "Above ₹6k", "slug": "above-6k", "title": "above ₹6,000" }
+      ],
+      "usage": {
+        "anc": "Noise cancelling",
+        "calls": "Calls",
+        "gaming": "Gaming",
+        "workout": "Workout & running",
+        "iphone": "iPhone users"
+      },
+      "guide": [
+        "Decide first whether you need active noise cancelling (ANC). It blocks bus, train and office noise and is worth it if you commute; real ANC starts around ₹1,800 now. Without ANC, spend on battery life, comfort and a known brand instead. Ignore the big 'up to 100 hours' battery claims: that number includes the case, and each charge of the buds usually lasts 5–8 hours.",
+        "Cheap earbuds fail more often. Under ₹1,500, about 13–15% of buyers on Amazon and Flipkart rate their earbuds 1–2★, mostly because one bud stops working or charging after a few months. From ₹1,600 up, OnePlus and realme models drop to around 6–10%. Paying a little more for a brand with service centres, like OnePlus, realme, boAt, Samsung or Apple, makes warranty claims much easier.",
+        "Match the earbuds to your phone. AirPods work best with iPhones and Galaxy Buds with Samsung phones; most extra features are locked to their own brand. For running or cycling outdoors, open-ear or bone-conduction designs let you hear traffic. For gaming, look for a 'low latency' or 'game' mode of 50ms or less."
+      ]
     },
     {
-      "slug": "headphones", "name": "Headphones", "comingSoon": true,
+      "slug": "headphones",
+      "name": "Headphones",
       "icon": "M3 15v-3a9 9 0 0 1 18 0v3M3 15a2 2 0 0 1 2-2h1v7H5a2 2 0 0 1-2-2zM21 15a2 2 0 0 0-2-2h-1v7h1a2 2 0 0 0 2-2z",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹2k", "slug": "under-2k", "title": "under ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" },
+        { "label": "Above ₹10k", "slug": "above-10k", "title": "above ₹10,000" }
+      ],
+      "usage": {
+        "anc": "Noise cancelling",
+        "wireless": "Bluetooth",
+        "wired": "Wired",
+        "gaming": "Gaming",
+        "studio": "Studio & editing"
+      },
+      "guide": [
+        "Pick the type first. Bluetooth headphones are best for phones and travel; wired headphones never need charging, last for years and give better sound for the money; gaming headsets add a boom mic for team chat. Over-ear cups are more comfortable for long hours than on-ear ones, which press on your ears.",
+        "If you commute or work in a noisy place, get noise cancelling (ANC). The boAt Rockerz 512 ANC is the cheapest one we trust, the Sony WH-CH720N and JBL Tune 780NC are the sweet spot, and the Sony WH-1000XM5 and Bose QuietComfort are the best. If you record music or edit video, choose studio headphones like the Audio-Technica ATH-M20x or Sony MDR-7506: they sound flat and accurate rather than bassy.",
+        "Check the battery number honestly: 30–50 hours is plenty for most people, and anything over 60 hours usually means lower volume or ANC off. Sony, JBL, boAt and Bose have the widest service networks in India. For gaming on a PC or console, wired headsets from HyperX or Razer are more reliable and cheaper than wireless ones."
+      ]
+    },
+    {
+      "slug": "earphones",
+      "name": "Earphones",
+      "icon": "M7 3a3 3 0 0 1 3 3v2a2 2 0 0 1-2 2H7v6a4 4 0 0 0 8 0v-6h-1a2 2 0 0 1-2-2V6a3 3 0 0 1 3-3",
+      "ranges": [
+        { "label": "Under ₹500", "slug": "under-500", "title": "under ₹500" },
+        { "label": "₹500–1,500", "slug": "500-1500", "title": "₹500 to ₹1,500" },
+        { "label": "Above ₹1,500", "slug": "above-1500", "title": "above ₹1,500" }
+      ],
+      "usage": {
+        "wired": "Wired",
+        "type-c": "Type-C plug",
+        "neckband": "Bluetooth neckband",
+        "anc": "Noise cancelling",
+        "music": "Music detail"
+      },
+      "guide": [
+        "Check your phone's port before buying wired earphones. Most new phones have no 3.5mm headphone jack, so you need a Type-C pair (or an adapter). Wired earphones are still the best value for calls, online classes and gaming, because they have no delay and no battery to wear out.",
+        "Neckbands sit between wired earphones and earbuds: they are hard to lose, last 25–40 hours and cost less than good earbuds. OnePlus and realme make the most reliable ones. If you want noise cancelling on a budget, a neckband like the realme Buds Wireless 5 ANC is cheaper than ANC earbuds.",
+        "For better music, look at in-ear monitors (IEMs) like the KZ EDC Pro or ZSN Pro X. They sound far clearer than typical earphones at the same price, but KZ is an imported brand sold through resellers, so service is limited. Cheap earphones under ₹500 wear out within a year for about 1 in 8 buyers, so treat them as replaceable."
+      ]
     },
     {
       "slug": "smartwatches", "name": "Smartwatches", "comingSoon": true,
