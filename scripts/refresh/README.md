@@ -35,3 +35,20 @@ Flipkart block plain server requests.
 - OUT OF RANGE — best price is now more than 5% outside the budget range.
 - PRICE MOVE >15% — big jump or drop since the last check.
 - HIGH 1-2★ — more than 15% of 50+ buyers rate it 1–2★.
+
+## Sundays: new-launch scan
+
+Finds good products that are not on the site yet (including new launches once
+buyers have rated them).
+
+1. `python3 scripts/refresh/scout_targets.py` → every category/range with price bounds and a search term
+   (terms live in `search_terms.json`; add one when a new category is added).
+2. Paste `scout.js` on the Amazon tab and run `scoutAmazon(TARGETS)`; then on the Flipkart tab run
+   `scoutFlipkart(TARGETS)` (same background + `window.jobResult` pattern; ~20 ranges per call).
+   Save all lines to `scout.txt`.
+3. `python3 scripts/refresh/scout_filter.py scout.txt 3` → up to 3 candidates per range that are not
+   already listed, best rating first (4.2★+ and 100+ ratings).
+4. For each candidate, check it really belongs (right product type, right price range), open its
+   1–2★ share (Amazon histogram / Flipkart reviews page), and read the newest 1–3★ reviews.
+   Add it only if it beats an existing pick on value or fills a range with fewer than 3 picks,
+   keep 3–6 picks per range, and write the row with the same columns and tone as the others.
