@@ -153,7 +153,8 @@ const smallBtn = (store, url, price, cls) => url
   ? `<a class="btn ${cls}" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">${store}${price ? ` <span>${rupee(price)}</span>` : ''}</a>`
   : `<span class="btn off">Not on ${store}</span>`;
 const bestPrice = (p) => [p.ap, p.fp].filter(Boolean).sort((a, b) => a - b)[0];
-const pageTitle = (c, r) => `Best ${c.name.toLowerCase()} ${r.title}`;
+const lower = (n) => (/^[A-Z]{2,}s?$/.test(n) ? n : n.toLowerCase());
+const pageTitle = (c, r) => `Best ${lower(c.name)} ${r.title}`;
 
 /* ---------- home ---------- */
 function home() {
@@ -185,7 +186,7 @@ function home() {
 <p class="rwhy" style="margin:0">${esc(p.why1)}</p>
 ${bestPrice(p) ? `<div class="price">${rupee(bestPrice(p))} <small>best price we saw · ${esc(p.checked)}</small></div>` : ''}
 <div class="buy">${smallBtn('Amazon', p.amz, p.ap, 'btn-amz')}${smallBtn('Flipkart', p.fk, p.fp, 'btn-fk')}</div>
-<a class="more-link" style="margin-top:0" href="/${c.slug}/${r.slug}/">All ${esc(c.name.toLowerCase())} ${esc(r.title)} →</a>
+<a class="more-link" style="margin-top:0" href="/${c.slug}/${r.slug}/">All ${esc(lower(c.name))} ${esc(r.title)} →</a>
 </article>`).join('');
   const nProducts = products.length;
   const body = `
@@ -253,15 +254,15 @@ function categoryPage(c) {
   const body = `<div class="wrap">
 <div class="page-top">
 <div class="crumbs"><a href="/">Home</a> / ${esc(c.name)}</div>
-<h1>Best ${esc(c.name.toLowerCase())} for every budget</h1>
+<h1>Best ${esc(lower(c.name))} for every budget</h1>
 <p class="lede">Choose your price range to see our ranked picks, from ${esc(c.ranges[0].title)} to ${esc(c.ranges[c.ranges.length - 1].title)}.</p>
 </div>
 <div class="cat-grid" style="padding:24px 0 40px">${rows}</div>
-${c.guide ? `<section class="guide" style="padding-bottom:64px;max-width:860px"><h2>How to choose ${esc(c.name.toLowerCase())}</h2>${c.guide.map((g) => `<p>${esc(g)}</p>`).join('')}</section>` : ''}
+${c.guide ? `<section class="guide" style="padding-bottom:64px;max-width:860px"><h2>How to choose ${esc(lower(c.name))}</h2>${c.guide.map((g) => `<p>${esc(g)}</p>`).join('')}</section>` : ''}
 </div>`;
   write(`${c.slug}/index.html`, layout({
-    title: `Best ${c.name.toLowerCase()} by budget (${new Date().getFullYear()}) — ${config.siteName}`,
-    desc: `Ranked ${c.name.toLowerCase()} picks for every budget in India, with Amazon and Flipkart prices.`,
+    title: `Best ${lower(c.name)} by budget (${new Date().getFullYear()}) — ${config.siteName}`,
+    desc: `Ranked ${lower(c.name)} picks for every budget in India, with Amazon and Flipkart prices.`,
     pathname: `/${c.slug}/`, body, activeCat: c.slug
   }));
 }
@@ -314,12 +315,12 @@ ${useBar}
 <div class="tscroll"><table><thead><tr><th>Best for</th><th>Pick</th><th>Amazon</th><th>Flipkart</th><th><span class="sr">Details</span></th></tr></thead><tbody>${quick}</tbody></table></div></section>
 <p class="empty" id="use-none" hidden>None of the picks in this budget are tagged for that. Try "Anything" or another budget.</p>
 ${cards}
-${c.guide ? `<section class="guide"><h2>How to choose ${esc(c.name.toLowerCase())} ${esc(r.title)}</h2>${c.guide.map((g) => `<p>${esc(g)}</p>`).join('')}${brands ? `<p class="brands"><strong style="color:var(--ink)">Brands worth buying in this range:</strong> ${esc(brands)}.</p>` : ''}</section>` : ''}
+${c.guide ? `<section class="guide"><h2>How to choose ${esc(lower(c.name))} ${esc(r.title)}</h2>${c.guide.map((g) => `<p>${esc(g)}</p>`).join('')}${brands ? `<p class="brands"><strong style="color:var(--ink)">Brands worth buying in this range:</strong> ${esc(brands)}.</p>` : ''}</section>` : ''}
 <div class="disclose"><strong>Disclosure:</strong> We earn a small commission when you buy through these Amazon and Flipkart links, at no extra cost to you. Prices change often during sales — the store page always shows the final price.</div>
 </div></div>`;
   write(`${c.slug}/${r.slug}/index.html`, layout({
     title: `${H1} (${new Date().getFullYear()}) — ${config.siteName}`,
-    desc: `${list.length} ranked ${c.name.toLowerCase()} ${r.title}: ${list.slice(0, 3).map((p) => p.brand + ' ' + p.model).join(', ')}. Amazon and Flipkart prices side by side.`,
+    desc: `${list.length} ranked ${lower(c.name)} ${r.title}: ${list.slice(0, 3).map((p) => p.brand + ' ' + p.model).join(', ')}. Amazon and Flipkart prices side by side.`,
     pathname: `/${c.slug}/${r.slug}/`, body, activeCat: c.slug,
     jsonld: {
       '@context': 'https://schema.org', '@type': 'ItemList', name: H1,

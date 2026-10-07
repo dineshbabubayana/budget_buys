@@ -56,14 +56,50 @@
       ]
     },
     {
-      "slug": "tablets", "name": "Tablets", "comingSoon": true,
+      "slug": "tablets",
+      "name": "Tablets",
       "icon": "M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM11 17h2",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹15k", "slug": "under-15k", "title": "under ₹15,000" },
+        { "label": "₹15–25k", "slug": "15-25k", "title": "₹15,000 to ₹25,000" },
+        { "label": "₹25–40k", "slug": "25-40k", "title": "₹25,000 to ₹40,000" },
+        { "label": "Above ₹40k", "slug": "above-40k", "title": "above ₹40,000" }
+      ],
+      "usage": {
+        "study-notes": "Study & notes",
+        "streaming": "Movies & streaming",
+        "kids": "Kids",
+        "work-keyboard": "Work with keyboard",
+        "drawing": "Drawing & stylus"
+      },
+      "guide": [
+        "Buy for the chip and the screen. A Snapdragon 6- or 7-series, Dimensity 7000-series, Helio G99 or Apple A16 keeps a tablet smooth for years; a 90Hz or 120Hz screen with at least 2K resolution makes reading and video noticeably nicer. Get 6GB RAM or more if you will split the screen or take notes alongside a video class.",
+        "Android or iPad? Android tablets from Samsung, Lenovo, Xiaomi, OnePlus and Motorola cost less and often include a stylus or keyboard support; Samsung promises the longest updates. The base iPad costs more but gets updates for 6+ years and has the best apps for drawing and note-taking, though the Apple Pencil and keyboard are extra.",
+        "Avoid unbranded or little-known tablets with 'up to 12GB RAM' claims: that counts virtual RAM, and buyer reviews show far more dead screens, charging faults and no service. Under ₹15k the only tablet we trust is the Lenovo Tab M11; spending around ₹18–22k gets a much better screen and chip."
+      ]
     },
     {
-      "slug": "tvs", "name": "TVs", "comingSoon": true,
+      "slug": "tvs",
+      "name": "TVs",
       "icon": "M3 5h18v12H3zM8 21h8M12 17v4",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹15k", "slug": "under-15k", "title": "under ₹15,000" },
+        { "label": "₹15–25k", "slug": "15-25k", "title": "₹15,000 to ₹25,000" },
+        { "label": "₹25–40k", "slug": "25-40k", "title": "₹25,000 to ₹40,000" },
+        { "label": "₹40–60k", "slug": "40-60k", "title": "₹40,000 to ₹60,000" },
+        { "label": "Above ₹60k", "slug": "above-60k", "title": "above ₹60,000" }
+      ],
+      "usage": {
+        "small-room": "Bedroom / small room",
+        "big-screen": "Big screen (55\"+)",
+        "4k": "4K movies & OTT",
+        "gaming": "Gaming & console"
+      },
+      "guide": [
+        "Choose the size from where you sit: about 32 inches for a bedroom (under 6 feet), 43 inches for 6–8 feet, 55 inches for 8–10 feet and 65 inches beyond that. At 43 inches and up, get 4K; at 32 inches, Full HD or HD is fine. QLED gives brighter, richer colour than a plain LED panel; Mini LED and OLED are worth it only above ₹70k.",
+        "Panel failures are the biggest risk with TVs. In 1–3★ reviews on Amazon and Flipkart, the common complaints are lines on the screen, dead panels within a year and slow service visits. We dropped several popular models where more than about 1 in 8 buyers gave 1–2★, and kept brands with a wide service network: Samsung, Sony, Xiaomi, realme, Motorola, TCL.",
+        "Check the smart platform and ports. Google TV and Tizen get the most apps and updates. For a PS5 or Xbox, look for a 120Hz panel with HDMI 2.1 and ALLM. Built-in speakers are weak on almost every budget TV, so set aside money for a soundbar if dialogue clarity matters."
+      ]
     },
     {
       "slug": "earbuds",
@@ -134,14 +170,76 @@
       ]
     },
     {
+      "slug": "washing-machines",
+      "name": "Washing Machines",
+      "icon": "M5 2h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zM4 7h16M12 10a4 4 0 1 0 0 8 4 4 0 0 0 0-8z",
+      "ranges": [
+        { "label": "Under ₹15k", "slug": "under-15k", "title": "under ₹15,000" },
+        { "label": "₹15–25k", "slug": "15-25k", "title": "₹15,000 to ₹25,000" },
+        { "label": "₹25–40k", "slug": "25-40k", "title": "₹25,000 to ₹40,000" },
+        { "label": "Above ₹40k", "slug": "above-40k", "title": "above ₹40,000" }
+      ],
+      "usage": {
+        "semi": "Semi-automatic",
+        "top-load": "Fully automatic top load",
+        "front-load": "Front load",
+        "big-family": "Big family (8kg+)"
+      },
+      "guide": [
+        "Pick the type first. Semi-automatic machines are cheapest and use the least water but need you to move clothes to the dryer tub. Top-load fully automatic machines are the easy middle ground. Front-load machines wash cleaner, are gentler on clothes and use less water and power, but cost more and take longer per cycle.",
+        "Size by family: 6–7kg suits 1–3 people, 7–8kg suits 3–5, and 9kg or more suits bigger families or anyone washing blankets at home. A built-in heater helps with stains and hard water, and an inverter (BLDC) motor runs quieter and lasts longer. LG, Samsung, IFB and Bosch had the fewest 1–2★ complaints in our check.",
+        "Most bad reviews on Amazon and Flipkart are about late installation, damaged delivery or service visits, not the machine itself, so check that the brand's service centre covers your pincode. If your area has hard water, a front-load with a heater or an anti-scale feature, plus a cheap inlet filter, prevents most drum and valve problems."
+      ]
+    },
+    {
+      "slug": "acs",
+      "name": "ACs",
+      "icon": "M3 5h18v8H3zM6 10h12M7 17l-1 3M12 17v3M17 17l1 3",
+      "ranges": [
+        { "label": "Under ₹30k", "slug": "under-30k", "title": "under ₹30,000" },
+        { "label": "₹30–40k", "slug": "30-40k", "title": "₹30,000 to ₹40,000" },
+        { "label": "₹40–50k", "slug": "40-50k", "title": "₹40,000 to ₹50,000" },
+        { "label": "Above ₹50k", "slug": "above-50k", "title": "above ₹50,000" }
+      ],
+      "usage": {
+        "small-room": "Small room (up to 110 sq ft)",
+        "mid-room": "Medium room (110–180 sq ft)",
+        "big-room": "Large room (180+ sq ft)",
+        "five-star": "Lowest power bill",
+        "smart": "Wi-Fi / smart"
+      },
+      "guide": [
+        "Size the AC by room: 1 ton for up to about 110 sq ft, 1.5 ton for 110–180 sq ft, and 2 ton above that or for top-floor rooms that get direct sun. Buy an inverter split AC; it cools faster, holds the temperature steadily and uses much less power than a fixed-speed model. Copper condenser coils are easier to repair than aluminium ones.",
+        "Star rating is about your power bill. If you run the AC 8 hours or more a day for most of the year, a 5-star model pays back its higher price within a few summers; for a few hours on hot nights, a 3-star is the better value. In our check, several premium 5-star models had more 1★ reviews than good 3-star ones, so a higher star rating does not mean a more reliable AC.",
+        "Most 1–3★ AC reviews are about installation: delays, extra charges for pipes and stands, and gas leaks from poor fitting. Confirm free installation, ask for the extra-pipe rate before the technician starts, and register the warranty yourself. Daikin, Voltas, Carrier, Panasonic and Midea had the best service feedback; we dropped models where complaints were about the unit failing, not the installation."
+      ]
+    },
+    {
       "slug": "smartwatches", "name": "Smartwatches", "comingSoon": true,
       "icon": "M8 7h8v10H8zM9 3h6l1 4H8zM9 21h6l1-4H8z",
       "ranges": []
     },
     {
-      "slug": "monitors", "name": "Monitors", "comingSoon": true,
+      "slug": "monitors",
+      "name": "Monitors",
       "icon": "M3 4h18v12H3zM8 20h8M12 16v4",
-      "ranges": []
+      "ranges": [
+        { "label": "Under ₹10k", "slug": "under-10k", "title": "under ₹10,000" },
+        { "label": "₹10–15k", "slug": "10-15k", "title": "₹10,000 to ₹15,000" },
+        { "label": "₹15–25k", "slug": "15-25k", "title": "₹15,000 to ₹25,000" },
+        { "label": "Above ₹25k", "slug": "above-25k", "title": "above ₹25,000" }
+      ],
+      "usage": {
+        "office": "Office & study",
+        "gaming": "Gaming",
+        "design": "Design & editing",
+        "laptop": "Laptop / USB-C"
+      },
+      "guide": [
+        "Match resolution to size: 24 inches is fine at Full HD (1080p), 27 inches looks sharper at QHD (1440p), and 4K is worth it at 27 inches or more if you edit photos, code all day or use a Mac. Choose an IPS panel for accurate colours and wide viewing angles; VA panels have deeper blacks but can smear in fast games.",
+        "For gaming, refresh rate matters most: 144Hz to 180Hz is a big jump over 60Hz and is now cheap. Office monitors at 100Hz or 120Hz still feel smoother for scrolling. Eye-care features like flicker-free backlight and low blue light are standard on BenQ, Dell and LG and help during long hours.",
+        "If you use a laptop, a USB-C monitor that charges it and carries the display over one cable is worth paying a little more for; check that it delivers at least 65W. Dell, LG, BenQ, Samsung and Acer have the widest service networks. Read the dead-pixel and warranty policy, because a few panel complaints show up for every brand."
+      ]
     }
   ]
 }
