@@ -410,6 +410,89 @@
         "For gaming, refresh rate matters most: 144Hz to 180Hz is a big jump over 60Hz and is now cheap. Office monitors at 100Hz or 120Hz still feel smoother for scrolling. Eye-care features like flicker-free backlight and low blue light are standard on BenQ, Dell and LG and help during long hours.",
         "If you use a laptop, a USB-C monitor that charges it and carries the display over one cable is worth paying a little more for; check that it delivers at least 65W. Dell, LG, BenQ, Samsung and Acer have the widest service networks. Read the dead-pixel and warranty policy, because a few panel complaints show up for every brand."
       ]
+    },
+    {
+      "slug": "office-chairs",
+      "name": "Office Chairs",
+      "icon": "M7 3h10v9H7zM5 12h14M12 12v5M7 21l5-4 5 4M5 9v3M19 9v3",
+      "ranges": [
+        { "label": "Under ₹5k", "slug": "under-5k", "title": "under ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" }
+      ],
+      "usage": {
+        "long-hours": "8+ hour workdays",
+        "headrest": "Headrest & recline",
+        "everyday": "Study & everyday WFH",
+        "budget": "Lowest price",
+        "brand-service": "Brand & service"
+      },
+      "guide": [
+        "If you sit for more than 4–5 hours a day, buy a chair with adjustable lumbar (lower back) support and a mesh back, which stays cooler than foam in Indian summers. A headrest and a tilt that locks in more than one position matter once you work 8+ hours. Set the seat height so your feet are flat on the floor and your elbows rest at desk level.",
+        "Look past the huge discounts: many chairs show an MRP of ₹15,000–25,000 but sell for ₹3,000–4,500 every day. Judge them by the share of 1★ ratings instead. In our check, good chairs had 6–8% of buyers rating them 1★, while weak ones had 13–19%, mostly about broken tilt mechanisms, sinking gas lifts and warranty support that stops answering.",
+        "A 3-year warranty is common now, but it only helps if the brand answers. Godrej Interio, Green Soul, Wakefit and INNOWIN had the fewest service complaints. Most chairs arrive for DIY assembly in 20–30 minutes; check the chair for noise and wobble on day one, while the return window is open."
+      ]
+    },
+    {
+      "slug": "office-tables",
+      "name": "Office Tables",
+      "icon": "M3 7h18M5 7v13M19 7v13M5 12h14",
+      "ranges": [
+        { "label": "Under ₹5k", "slug": "under-5k", "title": "under ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" }
+      ],
+      "usage": {
+        "monitor": "Monitor + keyboard setup",
+        "laptop": "Laptop & study",
+        "storage": "Shelves & storage",
+        "small-room": "Small rooms",
+        "free-install": "Free installation"
+      },
+      "guide": [
+        "Measure first. A laptop needs a top of about 90 × 60 cm; a monitor, keyboard and laptop side by side need 120 × 60 cm. Depth matters more than people expect: under 50 cm puts a monitor too close to your eyes. Desk height should be 73–76 cm for most people with a normal office chair.",
+        "Most budget desks are engineered wood (particle board) on a metal frame. Thicker panels (18 mm) and a full metal frame wobble less when you type. Check reviews for wobble, chipped edges on delivery and missing screws, which were the most common complaints in our check.",
+        "Wakefit, DeckUp, Green Soul and FURLAY had the most consistent reviews. Wakefit includes free installation; most others are DIY and take 30–60 minutes. If your room doubles as a bedroom, a foldable or wall-mounted table gives the floor space back."
+      ]
+    },
+    {
+      "slug": "mattresses",
+      "name": "Mattresses",
+      "icon": "M3 10h18v6H3zM3 16v3M21 16v3M6 10V7h5v3",
+      "ranges": [
+        { "label": "Under ₹10k", "slug": "under-10k", "title": "under ₹10,000 (Queen size)" },
+        { "label": "₹10–20k", "slug": "10-20k", "title": "₹10,000 to ₹20,000 (Queen size)" }
+      ],
+      "usage": {
+        "back-pain": "Back support",
+        "couples": "Couples (less disturbance)",
+        "dual": "Soft & firm sides",
+        "budget": "Lowest price"
+      },
+      "guide": [
+        "All prices here are for a Queen size (78 × 60 inches), the most common double bed in India. Measure your bed frame before ordering: some listings are 72 × 60 or 75 × 60, and a mattress that's too small leaves gaps at the edges. The same model costs about 15% less in Double size (72 × 48) and about 20% more in King (78 × 72).",
+        "For most people a medium-firm mattress is best, including for mild back pain. A very hard mattress is not better for your back. Memory foam reduces pressure on hips and shoulders and stops a partner's movement waking you; a dual-comfort mattress lets you flip between a soft and a firm side if you're unsure. Pick 6 inches or more if you weigh over 80 kg.",
+        "Most mattresses now come rolled in a box with a 100-night trial and a 7–10 year warranty. Wakefit, Sleepyhead/Duroflex and Sleepwell had the lowest share of 1★ ratings in our check (5–9%). Keep the box for the first few weeks in case you need to return it, and give it 2–3 weeks before deciding, since your body needs time to adjust."
+      ]
+    },
+    {
+      "slug": "air-purifiers",
+      "name": "Air Purifiers",
+      "icon": "M6 3h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM9 7h6M9 10h6M9 13h6",
+      "ranges": [
+        { "label": "Under ₹10k", "slug": "under-10k", "title": "under ₹10,000" },
+        { "label": "₹10–20k", "slug": "10-20k", "title": "₹10,000 to ₹20,000" }
+      ],
+      "usage": {
+        "bedroom": "Bedroom",
+        "living-room": "Living room & large rooms",
+        "allergies": "Allergies",
+        "low-running-cost": "Low running cost",
+        "budget": "Lowest price"
+      },
+      "guide": [
+        "Choose by CADR (clean air delivery rate), not the room size printed on the box. As a rule of thumb, you need about 1 m³/h of CADR per square foot of room for fast cleaning, so a 150 sq ft bedroom needs 150 m³/h or more and a 300 sq ft living room needs 250–300 m³/h. Always look for a True HEPA (H13) filter, which traps PM2.5 particles.",
+        "The real cost is the filter. Replacement filters cost ₹1,500–5,000 and last 6–18 months depending on how bad your air is and how long you run the purifier. Coway filters last the longest; check the filter price on the store before you buy the purifier.",
+        "Keep doors and windows closed while it runs, and place it at least a foot away from walls. Philips, Coway, Levoit and Cuckoo had the fewest 1★ ratings in our check (3–6%). Avoid cheap no-name purifiers that only list a coverage area and no CADR figure."
+      ]
     }
   ]
 }
