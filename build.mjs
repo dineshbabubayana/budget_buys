@@ -46,6 +46,10 @@ function withAmazonTag(url) {
   if (!url || !config.amazonTag || /[?&]tag=/.test(url)) return url;
   return url + (url.includes('?') ? '&' : '?') + 'tag=' + encodeURIComponent(config.amazonTag);
 }
+function withCuelinks(url) {
+  if (!url || !config.cuelinksChannelId || !/^https?:\/\/(www\.|dl\.)?flipkart\.com\//.test(url)) return url;
+  return 'https://linksredirect.com/?cid=' + config.cuelinksChannelId + '&source=linkkit&url=' + encodeURIComponent(url);
+}
 function toPreview(rel, html) {
   const depth = rel.split('/').length - 1;
   const up = depth ? '../'.repeat(depth) : './';
@@ -89,7 +93,7 @@ for (const r of raw) {
     badge: r.value_badge, why1: r.why_1, why2: r.why_2, drawback: r.drawback, buyIf: r.buy_if,
     ap: num(r.amazon_price), fp: num(r.flipkart_price),
     amz: withAmazonTag(r.amazon_affiliate_url || r.amazon_url),
-    fk: r.flipkart_affiliate_url || r.flipkart_url,
+    fk: r.flipkart_affiliate_url || withCuelinks(r.flipkart_url),
     checked: niceDate(r.price_checked_at), brands: r.brands_in_range
   });
 }
