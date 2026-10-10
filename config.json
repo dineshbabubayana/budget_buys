@@ -416,14 +416,17 @@
     },
     {
       "slug": "office-chairs",
-      "name": "Office Chairs",
+      "name": "Office & Gaming Chairs",
       "icon": "M7 3h10v9H7zM5 12h14M12 12v5M7 21l5-4 5 4M5 9v3M19 9v3",
       "ranges": [
         { "label": "Under ₹5k", "slug": "under-5k", "title": "under ₹5,000" },
-        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" }
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" },
+        { "label": "₹10–20k", "slug": "10-20k", "title": "₹10,000 to ₹20,000" },
+        { "label": "Above ₹20k", "slug": "above-20k", "title": "above ₹20,000" }
       ],
       "usage": {
         "long-hours": "8+ hour workdays",
+        "gaming": "Gaming & recline",
         "headrest": "Headrest & recline",
         "everyday": "Study & everyday WFH",
         "budget": "Lowest price",
@@ -431,6 +434,7 @@
       },
       "guide": [
         "If you sit for more than 4–5 hours a day, buy a chair with adjustable lumbar (lower back) support and a mesh back, which stays cooler than foam in Indian summers. A headrest and a tilt that locks in more than one position matter once you work 8+ hours. Set the seat height so your feet are flat on the floor and your elbows rest at desk level.",
+        "Gaming chairs are racing-style high-back chairs with neck and lumbar pillows, deep recline and often a footrest. They suit gaming and relaxing, but PU leather gets warm in Indian summers, so pick fabric or a mesh office chair if you sit 8+ hours in a room without AC. Good gaming chairs start around ₹8,000; under that, the ones we checked had 15–17% of buyers rating them 1–2★.",
         "Look past the huge discounts: many chairs show an MRP of ₹15,000–25,000 but sell for ₹3,000–4,500 every day. Judge them by the share of 1★ ratings instead. In our check, good chairs had 6–8% of buyers rating them 1★, while weak ones had 13–19%, mostly about broken tilt mechanisms, sinking gas lifts and warranty support that stops answering.",
         "A 3-year warranty is common now, but it only helps if the brand answers. Godrej Interio, Green Soul, Wakefit and INNOWIN had the fewest service complaints. Most chairs arrive for DIY assembly in 20–30 minutes; check the chair for noise and wobble on day one, while the return window is open."
       ]
