@@ -350,6 +350,28 @@
       ]
     },
     {
+      "slug": "womens-watches",
+      "name": "Women's Watches",
+      "icon": "M12 8v4l2 2M10 3h4l.8 3H9.2zM10 21h4l.8-3H9.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z",
+      "ranges": [
+        { "label": "Under ₹2k", "slug": "under-2k", "title": "under ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" },
+        { "label": "₹5–10k", "slug": "5-10k", "title": "₹5,000 to ₹10,000" },
+        { "label": "Above ₹10k", "slug": "above-10k", "title": "above ₹10,000" }
+      ],
+      "usage": {
+        "office": "Office & daily",
+        "festive": "Festive & occasions",
+        "gifting": "Gifting",
+        "minimal": "Minimal & simple"
+      },
+      "guide": [
+        "Decide where she will wear it. A slim steel or leather watch with a plain dial suits office and daily wear; rose gold, mother-of-pearl and crystal dials suit weddings, festivals and parties. Bracelet straps can be shortened at any watch shop, while leather straps look smart but wear out sooner if they get wet.",
+        "Under ₹5,000, Titan, Fastrack, Sonata and Casio give the best value, and Titan's Raga range is made for festive and ethnic wear. These brands have service and battery replacement in most Indian towns, which matters more than brand name when something goes wrong.",
+        "Above ₹5,000, international brands like Fossil, Michael Kors, Armani Exchange and GUESS add a designer look, but have fewer service centres than Titan. Buy them only where the seller is the brand or an authorised retailer, because fake fashion watches are common from third-party sellers. These are analog watches; for fitness tracking see our Smartwatches picks."
+      ]
+    },
+    {
       "slug": "power-banks",
       "name": "Power Banks",
       "icon": "M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM13 7l-3 5h4l-3 5",
@@ -390,6 +412,29 @@
         "Decide what you want to trim. A beard trimmer with length settings is enough for most men; a multigroom kit adds attachments for hair, nose and body; Philips OneBlade trims, edges and shaves close without razor cuts, which suits stubble and clean-shaven looks. Waterproof trimmers can be rinsed and used in the shower.",
         "Runtime matters if you trim often: 45–60 minutes is fine for weekly beard trims, while VGR and Havells models run up to 2–3 hours. Type-C charging means you can use your phone charger. Philips had the lowest complaint rates and the widest service network in our check.",
         "Very cheap trimmers under ₹500 often pull hair and their batteries die within months; in our check some had over 20% of buyers rating them 1–2★. Spending ₹600–1,200 on Philips, Xiaomi, VGR, Havells or Bombay Shaving Company gets you a trimmer that lasts years."
+      ]
+    },
+    {
+      "slug": "hair-dryers",
+      "name": "Hair Dryers",
+      "icon": "M4 7a5 5 0 0 1 5-5h6a3 3 0 0 1 0 6h-2v3h-2v-3H9a5 5 0 0 1-5-1zM11 11l-1 11h3l1-11M17 5h4M17 3l3-1M17 7l3 1",
+      "ranges": [
+        { "label": "Under ₹1,000", "slug": "under-1000", "title": "under ₹1,000" },
+        { "label": "₹1–2k", "slug": "1-2k", "title": "₹1,000 to ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" },
+        { "label": "Above ₹5k", "slug": "above-5k", "title": "above ₹5,000" }
+      ],
+      "usage": {
+        "daily": "Everyday drying",
+        "long-thick": "Long or thick hair",
+        "travel": "Travel & compact",
+        "styling": "Styling & volume",
+        "frizz": "Frizz & shine"
+      },
+      "guide": [
+        "Match the power to your hair. A 1000–1200W dryer is enough for short or medium hair; for long or thick hair, 1800–2000W cuts drying time a lot. A cool-shot button and at least two heat settings help you dry without overheating your scalp, and a foldable handle matters only if you travel.",
+        "Under ₹1,000, Havells and Philips are the safest buys: lakhs of buyer ratings, low failure rates and service centres in most towns. Between ₹1,000 and ₹5,000, salon brands like Vega Professional, Ikonic and WAHL give you much stronger airflow and longer cords. Ionic dryers reduce frizz and help hair look smoother.",
+        "Above ₹5,000 you are paying for a brushless high-speed motor (100,000+ RPM) that dries faster with less heat. Laifen and Dreame give most of Dyson's speed for a quarter of the price. Check the plug before buying: some high-speed dryers ship with a large 15A plug, and cheap Dyson listings are often imports with foreign plugs and no Indian warranty."
       ]
     },
     {
