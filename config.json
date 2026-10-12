@@ -372,6 +372,26 @@
       ]
     },
     {
+      "slug": "womens-walking-shoes",
+      "name": "Women's Walking Shoes",
+      "icon": "M3 17v-6l4-1.5 2.5 3h3.5l7.5 2.5V17zM3 17v2h18v-2M9 12.5l1-1.5M11.5 13l1-1.5",
+      "ranges": [
+        { "label": "Under ₹3k", "slug": "under-3k", "title": "under ₹3,000" },
+        { "label": "₹3–6k", "slug": "3-6k", "title": "₹3,000 to ₹6,000" }
+      ],
+      "usage": {
+        "all-day": "All-day walking & standing",
+        "arch": "Arch support",
+        "slip-on": "Easy slip-on",
+        "budget": "Lowest price"
+      },
+      "guide": [
+        "For daily walks and long hours on your feet, look for three things: a cushioned midsole, a removable insole, and a light, breathable mesh upper. Skechers' GO WALK range is built for walking, Max Cushioning adds the thickest sole for standing all day, and Arch Fit adds a firmer, shaped insole for flat feet or arch pain. 'Slip-ins' models have a stiff heel you can step into without bending down, which helps older parents and anyone with back pain.",
+        "Skechers prices on Amazon and Flipkart change by size and colour, often by ₹500 or more, and sales cut them by 50–65% from the MRP. Check the price for your exact size before buying, and compare both stores. Skechers sizes run true to UK size for most buyers, but the Arch Fit models feel narrower; if you have wide feet, go half a size up or choose a GO WALK model.",
+        "Buy from well-rated, established sellers (our picks are sold by Happy eCom or Cocoblu Retail), because a few buyers report fake Skechers from unknown sellers. Amazon gives a 10-day return on these picks, so walk around indoors in them before removing the tags. We picked Skechers here because it is the most-rated walking-shoe brand on both stores; Campus, ASICS and Bata Power are other brands worth looking at."
+      ]
+    },
+    {
       "slug": "power-banks",
       "name": "Power Banks",
       "icon": "M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM13 7l-3 5h4l-3 5",
