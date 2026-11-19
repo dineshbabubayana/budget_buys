@@ -568,6 +568,59 @@
         "The real cost is the filter. Replacement filters cost ₹1,500–5,000 and last 6–18 months depending on how bad your air is and how long you run the purifier. Coway filters last the longest; check the filter price on the store before you buy the purifier.",
         "Keep doors and windows closed while it runs, and place it at least a foot away from walls. Philips, Coway, Levoit and Cuckoo had the fewest 1★ ratings in our check (3–6%). Avoid cheap no-name purifiers that only list a coverage area and no CADR figure."
       ]
+    },
+    {
+      "slug": "wifi-routers",
+      "name": "Wi-Fi Routers",
+      "icon": "M5 15h14a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM8 15V8M16 15V8M8 18h1",
+      "ranges": [
+        { "label": "Under ₹2k", "slug": "under-2k", "title": "under ₹2,000" },
+        { "label": "₹2–5k", "slug": "2-5k", "title": "₹2,000 to ₹5,000" }
+      ],
+      "usage": {
+        "small-home": "1BHK & single room",
+        "second-floor": "Second floor or room (access point)",
+        "work-from-home": "Work from home",
+        "fast-plans": "Plans above 100 Mbps"
+      },
+      "guide": [
+        "Match the router to your internet plan. On a 100 Mbps plan, a basic single-band N300 router like the TL-WR820N is enough for one or two people. For 150 Mbps or more, or for many devices and work calls, get a dual-band router: its 5 GHz band is much faster in the same room. Routers with only 10/100 ports cap wired speed at 100 Mbps, so choose Gigabit ports for faster plans.",
+        "To cover an upstairs floor or a far room, the best way is to run a Cat6 LAN cable from the main router and set the second router to Access Point mode. You get close to full speed, unlike a Wi-Fi repeater, which can lose about half the speed. Check that the listing says 'Access Point' or 'Multi-Mode' before you buy.",
+        "Your internet provider usually gives you a router, so you only need to buy one to extend coverage or replace a weak one. TP-Link has the most ratings and the widest service network in India, and its Tether app makes setup easy. Keep the router out in the open and high up, not inside a cabinet or behind the TV."
+      ]
+    },
+    {
+      "slug": "lan-cables",
+      "name": "LAN Cables",
+      "icon": "M8 3h8v6l-2 2v3h-4v-3L8 9zM12 14v7M10 5v2M14 5v2",
+      "ranges": [
+        { "label": "Under ₹1,000", "slug": "under-1000", "title": "under ₹1,000" }
+      ],
+      "usage": {
+        "indoor": "Indoor, along walls",
+        "outdoor": "Outdoor or up a wall"
+      },
+      "guide": [
+        "Buy Cat6. It carries full speed for any home plan up to 100 metres, costs barely more than Cat5e and works with every router and laptop. A ready-made cable with the plugs already fitted is easier than cutting and crimping your own.",
+        "Measure the route along the walls, not in a straight line, and add 2–3 metres. One floor up usually needs 10–20 metres; 15 metres covers most homes. Extra length doesn't slow anything down, so coil the spare neatly rather than buying a cable that is too short.",
+        "If the cable runs outside the building or up an outer wall, get an outdoor, UV-resistant cable, or run a normal one inside a PVC conduit; indoor cables go brittle in the sun. Cable clips (about ₹100 a pack) keep it fixed to the wall."
+      ]
+    },
+    {
+      "slug": "laptop-chargers",
+      "name": "Laptop Chargers",
+      "icon": "M9 3v5M15 3v5M7 8h10v4a5 5 0 0 1-10 0zM12 17v4",
+      "ranges": [
+        { "label": "Under ₹1,500", "slug": "under-1500", "title": "under ₹1,500" }
+      ],
+      "usage": {
+        "asus": "ASUS laptops"
+      },
+      "guide": [
+        "Match three things from the label on your old charger: the voltage (V), the current (A) or watts (W), and the pin size, such as 4.0 × 1.35 mm. A charger with the same voltage and pin and equal or higher watts is safe; lower watts charges slowly or not at all.",
+        "Many listings put the laptop brand in the title but are sold by third-party sellers. A genuine charger costs more, but if you charge for many hours a day it is worth it. Check the seller name and that your laptop's model number is listed as compatible.",
+        "Cheap compatible chargers (₹500–900) from brands like Lapcare work as a backup. Make sure they list short-circuit and over-voltage protection and come with at least a 6-month warranty."
+      ]
     }
   ]
 }
